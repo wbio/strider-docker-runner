@@ -46,6 +46,12 @@ DOCKER_CERT_PATH=~/stridercd/certs
 ```
 Be sure to [enable TLS on the Daemon](http://docs.docker.com/articles/https/#daemon-modes) as well. More information at http://docs.docker.com/articles/https/
 
+To configure a different default Docker image for your containers, you can set the `STRIDER_DOCKER_IMAGE` environment variable:
+
+```
+STRIDER_DOCKER_IMAGE=my-docker-image
+```
+
 ## Verification
 
 See this comment in the "prepare" phase telling you that **docker is alive**
