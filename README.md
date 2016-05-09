@@ -4,6 +4,8 @@ strider-docker-runner
 ## Changes in this fork
 Due to [issue #18](https://github.com/Strider-CD/strider-docker-runner/issues/18), I needed to create a work-around to get `npm install` to run prior to `npm test`. This fork uses a [modified version of strider-runner-core](https://github.com/wbio/strider-runner-core) to run `npm install` if the runner sees a non-install npm command before seeing an install command. This is a very hacky fix that probably won't work for everyone, but based on the discussion in the linked issue as well as the discussion in [another issue](https://github.com/Strider-CD/strider-heroku/issues/4#issuecomment-54719228) referenced in that thread, a proper fix sounded like more work than I was willing to take on at the moment.
 
+This fork also looks for an optional environment variable, `STRIDER_DOCKER_IMAGE`, which can override the default image (`strider/strider-docker-slave`) if desired (project config will always override either of these).
+
 ## Installation
 
 `cd` into strider deployment and run `npm install git+https://github.com/wbio/strider-docker-runner.git`
