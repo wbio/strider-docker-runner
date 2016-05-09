@@ -34,7 +34,7 @@
     "lodash": "^2.4.1",
     "shell-quote": "^1.4.2",
     "ssh2": "^0.3.4",
-    "strider-runner-core": "^2.0.0",
+    "strider-runner-core": "git+https://github.com/wbio/strider-runner-core.git",
     "strider-simple-runner": "^0.13.0",
     "uri-js": "^1.4.2"
   },
